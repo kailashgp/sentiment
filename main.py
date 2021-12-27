@@ -24,6 +24,9 @@ def review_rating(string):
     else:
         return 'Negative'
 
+@app.route('/')
+def hello_world():
+  return 'Hey its Python Flask application!'
 
 # curl --header "Content-Type: application/json" --request POST --data '{"review": "Data"}' -v http://localhost:5000/review
 @app.route('/review', methods=['POST'])
@@ -49,4 +52,4 @@ def post_review():
 
 
 if __name__ == '__main__':
-   app.run(debug=True, host='0.0.0.0')
+   app.run()
