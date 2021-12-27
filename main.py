@@ -48,6 +48,6 @@ def post_review():
 
 
 
-if __name__ == '__main__':
-    app.run()
+#if __name__ == '__main__':
+    #app.run()
    #app.run(debug=True, host='0.0.0.0')
